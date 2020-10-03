@@ -29,6 +29,7 @@ padding-bottom: 30px;
 justify-content: center;
 padding-left: 25%;
 padding-right: 25%;
+text-align: center;
 }
 
 #goals {
@@ -37,6 +38,7 @@ padding-bottom: 30px;
 justify-content: center;
 padding-left: 25%;
 padding-right: 25%;
+text-align: center;
 }
 
 #education {
@@ -44,7 +46,24 @@ display: flex;
 justify-content: center;
 padding-left: 25%;
 padding-right: 25%;
+text-align: center;
 }
+
+#work-experience {
+  display: flex;
+  justify-content: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  }
+
+#top-albums{
+  display: flex;
+  justify-content: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  }
 
 p{
   font-family:  'Arial Narrow Bold', sans-serif;
