@@ -7,93 +7,115 @@ console.log(userName);
 var correctAnswer=0;
 
 // // Hometown Question
-// var homeTown = prompt('Is Taylor from Seattle?').toLowerCase();
+var homeTown = prompt('Is Taylor from Seattle?').toLowerCase();
 // console.log(homeTown);
 
-// if (homeTown === 'yes' || homeTown === 'y') {
-//   // console.log('Correct! Taylor is from Seattle');
-//   alert('Correct, ' + userName + '! Taylor is from Seattle');
-//   correctAnswer++;
-// } else {
-//   alert('You got that wrong, ' + userName + '.');
-// }
+if (homeTown === 'yes' || homeTown === 'y') {
+  // console.log('Correct! Taylor is from Seattle');
+  alert('Correct, ' + userName + '! Taylor is from Seattle');
+  correctAnswer++;
+} else {
+  alert('You got that wrong, ' + userName + '.');
+}
 
 
 // // Profession Question
-// var profession = prompt('Is Taylor a software developer?').toLowerCase();
+var profession = prompt('Is Taylor a software developer?').toLowerCase();
 // console.log(profession);
 
-// if (profession === 'yes' || profession === 'y'){
-//   // console.log('Correct! Taylor is a software developer');
-//   alert('Correct, ' + userName + '! Taylor is a software developer');
-//   correctAnswer++;
-// }else {
-//   alert('You got that wrong, ' + userName + '.');
-// }
+if (profession === 'yes' || profession === 'y'){
+  // console.log('Correct! Taylor is a software developer');
+  alert('Correct, ' + userName + '! Taylor is a software developer');
+  correctAnswer++;
+}else {
+  alert('You got that wrong, ' + userName + '.');
+}
 
 // // Operating System Question
-// var operatingSystem = prompt('Is Taylor a MacOS user?').toLowerCase();
+var operatingSystem = prompt('Is Taylor a MacOS user?').toLowerCase();
 // console.log(operatingSystem);
 
-// if (operatingSystem === 'yes' || operatingSystem === 'y'){
-//   // console.log('Correct! Taylor is a MacOS user');
-//   alert('Correct, ' + userName + '! Taylor is a MacOS user');
-//   correctAnswer++;
-// } else {
-//   alert('You got that wrong, ' + userName + '.');
-// }
+if (operatingSystem === 'yes' || operatingSystem === 'y'){
+  // console.log('Correct! Taylor is a MacOS user');
+  alert('Correct, ' + userName + '! Taylor is a MacOS user');
+  correctAnswer++;
+} else {
+  alert('You got that wrong, ' + userName + '.');
+}
 
 // // Houseplants
-// var housePlants = prompt('Does Taylor have house plants?').toLowerCase();
+var housePlants = prompt('Does Taylor have house plants?').toLowerCase();
 // console.log(housePlants);
 
-// if(housePlants === 'yes' || housePlants === 'y'){
-//   // console.log('Correct! Taylor has house plants');
-//   alert('Correct, ' + userName + '! Taylor has house plants');
-//   correctAnswer++;
-// } else {
-//   alert('You got that wrong, ' + userName + '.');
-// }
+if(housePlants === 'yes' || housePlants === 'y'){
+  // console.log('Correct! Taylor has house plants');
+  alert('Correct, ' + userName + '! Taylor has house plants');
+  correctAnswer++;
+} else {
+  alert('You got that wrong, ' + userName + '.');
+}
 
 // // Travel
-// var travel = prompt('Has Taylor traveled out of the country?').toLowerCase();
+var travel = prompt('Has Taylor traveled out of the country?').toLowerCase();
 // console.log(travel);
 
-// if(travel === 'yes' || travel === 'y'){
-//   // console.log('Correct! Taylor has traveled out of the country');
-//   alert('Correct, ' + userName + '! Taylor has traveled out of the country');
-//   correctAnswer++;
-// } else {
-//   alert('You got that wrong, ' + userName + '.');
-// }
+if(travel === 'yes' || travel === 'y'){
+  // console.log('Correct! Taylor has traveled out of the country');
+  alert('Correct, ' + userName + '! Taylor has traveled out of the country');
+  correctAnswer++;
+} else {
+  alert('You got that wrong, ' + userName + '.');
+}
 
 // How many countries?
 
-var numberOfCountries = prompt('How many countries has Taylor travelled to? Please answer in numberic value.');
-console.log(numberOfCountries);
 
 var countryGuesses = 0;
 
-while (countryGuesses <= 4) {
-  if (numberOfCountries > 7){
-    prompt('Too high, ' + userName + ', guess again!');
+while (countryGuesses < 4) {
+  var numberOfCountries = prompt('How many countries has Taylor travelled to? Please answer in numeric value.');
+  // console.log(numberOfCountries);
+  if (numberOfCountries > '7'){
+    alert('Too high, ' + userName + ', guess again!');
     countryGuesses++;
-  } else if (numberOfCountries < 7){
-    prompt('Too low, ' + userName + ' guess again!');
+  } else if (numberOfCountries < '7'){
+    alert('Too low, ' + userName + ' guess again!');
     countryGuesses++;
-  } else if (numberOfCountries === 7){
+  } else if(numberOfCountries === '7'){
     alert('Correct! ' + userName + '.' );
     correctAnswer++;
     countryGuesses++;
     break;
-  // } else {
-  //   break;
-  // }
+  }
+
+  if (countryGuesses === 4){
+    alert('You are out guesses, ' + userName + ', on to the next question!');
+  }
 }
 
+// Favorite Color
 
+var colorArray = ['orange', 'green'];
 
+var attempts = 0;
 
+while (attempts < 6){
+  var faveColors = prompt('What are Taylor\'s favorite colors?').toLowerCase();
+
+  if (faveColors === colorArray[0] || faveColors === colorArray[1]){
+    alert('Correct, ' + userName + ', Taylor\'s favorite colors are orange and green!');
+    attempts = 6;
+    correctAnswer++;
+    break;
+  }else if (faveColors !== colorArray[0] || faveColors !== colorArray[1]){
+    alert('wrong guess again');
+    attempts++;
+  }
+
+  if (attempts === 6){
+    alert('You are out guesses, ' + userName + '.  Click okay to finish.');
+  }
+}
 
 
 //Final Message to User
