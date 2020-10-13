@@ -1,84 +1,117 @@
-
+/* 
 body {
-  background-image: url(/img/euchalyptus.jpeg);
+  /* background-image: url(/img/euchalyptus.jpeg); */
   /* height: 500px; */
+  /* background-size: cover;
+  background-attachment: fixed; */
+  /* width: 960px; */
+
+
+/* img {
+  position: fixed;
+  top: 400px;
+  left: 400px;
+} */
+
+header {
+  /* position: relative;
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 
+  0 0  0 2px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+  margin-left: 250px; */
+  height: 300px;
+  max-height: 300px;
   background-size: cover;
-  background-attachment: fixed;
-  width: 960px;
+  background-image: url(/img/leaf.jpeg);
+  box-shadow: 0px 3px 4px black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
-#name {
+main{
+  padding-top: 310px;
+}
+
+/* #name {
   font-weight: bold;
   font-style: italic;
-}
+} */
 
 
 h1 {
-  font-family: 'Zhi Mang Xing', cursive;
-  color: lightslategrey;
+  font-family: 'Courier New';
+  color: whitesmoke;
+  padding-top: 250px;
+  margin: 0px auto; 
   font-size: 50px;
-  padding-top: 100px;
-  margin-left: 10px;
+  float: right;
+}
+
+#taylor-thornton {
+  font: white !important;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 10px;
-  font-family: 'Zhi Mang Xing', cursive;
+  margin-bottom: 20px;
+  font-family: Arial;
   font-size: 30px;
+  padding-top: 20px;
 }
 
 div {
-  width: 310px;
-  height: 210px;
+  width: 450px;
+  height: 250px;
   background-color:whitesmoke;
-  margin: 10px 10px 10px 10px;
-  /* opacity: 0.7; */
+  margin: 10px auto;
+  opacity: 0.7; 
   padding: 10px;
-  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 
-  0 0  0 2px rgb(255,255,255),
-  0.3em 0.3em 1em rgba(0,0,0,0.3);
-  font-family: Arial;
-
-
+  text-align: center;  box-shadow: 0px 3px 4px lightgray;
+  font-family: monospace;
 }
 
-#bio{
-border: solid 10px white;
+#bio {
+  padding-top: 75px;
+}
+ 
+
+  /* float: right; */
+  /* position: relative; */
+  
+  /* padding-top: 315px; */
+/* border: solid 10px white;
 font-size: 14pt;
 color: 36, 54, 64;
 width: 300px;
 height: 200px;
 margin: auto;
 text-align: center;
-padding: 25px;
-background-color: lightslategrey;
-box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 
-  0 0  0 2px rgb(255,255,255),
-  0.3em 0.3em 1em rgba(0,0,0,0.3);
-font-family: Arial;
-}
+padding: 25px; */
+} 
 
-#goals{
-  border: solid 10px lightsteelblue;
+ #goals{
+  width: 200px;
+  /* border: solid 10px lightsteelblue;
   float: left;
-  text-align: center;
-}
+  text-align: center; */
+} 
 
-#work-experience{
+/* #work-experience{
   border: solid 10px lightsteelblue;
   float: right;
-}
+} */
 
-#education{
+/* #education{
   border: solid 10px lightsteelblue;
   float: left;
-}
+} */
 
-#top-albums{
+/* #top-albums{
   border: solid 10px lightsteelblue;
   float: right;
-}
+}  */
 
 ul {
   list-style-type: circle;
